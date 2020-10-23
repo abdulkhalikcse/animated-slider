@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+/*font-family: 'Open Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+/*font-family: 'Roboto', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+/*font-family: 'Lato', sans-serif;*/
+
+
+/******************************
+	Slider Section and Items
+******************************/
+.tp-sliderSection{
+	overflow: hidden;
+    margin: 0 0 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.tp-sliderSection .item img{
+	max-width: 100%;
+	height: auto;
+}
+#tp-sliderMain .item {
+	height: 700px; /*Slider main height*/
+}
+
+
+/***************************
+    Slide Effect
+***************************/
+/* slide Fade effect*/
+.slideFade .carousel-inner .item {
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.slideFade .carousel-inner .item,
+.slideFade .carousel-inner .active.left,
+.slideFade .carousel-inner .active.right {
+  opacity: 0;
+}
+.slideFade .carousel-inner .active,
+.slideFade .carousel-inner .next.left,
+.slideFade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.slideFade .carousel-inner .next,
+.slideFade .carousel-inner .prev,
+.slideFade .carousel-inner .active.left,
+.slideFade .carousel-inner .active.right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+/* background scroll Left animation effect*/
+.item.bgScrollLeft{
+    -webkit-animation: bgScrollLeft 30s linear infinite;
+    -moz-animation: bgScrollLeft 30s linear infinite;
+    animation: bgScrollLeft 30s linear infinite;
+    -webkit-background-size:115% auto !important;
+    -moz-background-size:115% auto !important;
+    -o-background-size:115% auto !important;
+    background-size:115% auto !important;
+}
+@-webkit-keyframes bgScrollLeft {
+    from {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+    to {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+}
+@-moz-keyframes bgScrollLeft {
+    from {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+    to {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+}
+@keyframes bgScrollLeft {
+    from {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+    to {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+}
+
+/* background Scroll Right animation */
+.item.bgScrollRight{
+    -webkit-animation: bgScrollRight 30s linear infinite;
+    -moz-animation: bgScrollRight 30s linear infinite;
+    animation: bgScrollRight 30s linear infinite;
+    -webkit-background-size:115% auto !important;
+    -moz-background-size:115% auto !important;
+    -o-background-size:115% auto !important;
+    background-size:115% auto !important;
+}
+@-webkit-keyframes bgScrollRight {
+    from {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+    to {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+}
+@-moz-keyframes bgScrollRight {
+    from {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+    to {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+}
+@keyframes bgScrollRight {
+    from {
+        -webkit-background-position: right center;
+        -moz-background-position: right center;
+        -ms-background-position: right center;
+        background-position: right center;
+    }
+    to {
+        -webkit-background-position: left center;
+        -moz-background-position: left center;
+        -ms-background-position: left center;
+        background-position: left center;
+    }
+}
+
+/* background ZoomIN animation */
+.item.bgzoomIn{
+     -moz-animation: bgzoomIn 20s linear infinite;
+    -webkit-animation: bgzoomIn 20s linear infinite;
+    animation: bgzoomIn 20s linear infinite;
+}
+@-webkit-keyframes bgzoomIn {
+    from {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+    to {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+}
+@-moz-keyframes bgzoomIn {
+    from {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+    to {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+}
+@keyframes bgzoomIn {
+    from {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+    to {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+}
+
+/* background ZoomOut animation */
+.item.bgzoomOut{
+     -moz-animation: bgzoomOut 20s linear infinite;
+    -webkit-animation: bgzoomOut 20s linear infinite;
+    animation: bgzoomOut 20s linear infinite;
+}
+@-webkit-keyframes bgzoomOut {
+    from {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+    to {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
+@-moz-keyframes bgzoomOut {
+    from {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+    to {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
+@keyframes bgzoomOut {
+    from {
+        -webkit-background-size: 120% auto;
+        -moz-background-size: 120% auto;
+        -o-background-size: 120% auto;
+        background-size: 120% auto;
+    }
+    to {
+        -webkit-background-size: 100% auto;
+        -moz-background-size: 100% auto;
+        -o-background-size: 100% auto;
+        background-size: 100% auto;
+    }
+}
+
+
+/*************************************
+ Slider Caption Item Animation Delay
+*************************************/
+[data-delay="1s"] {animation-delay: 1s;}
+[data-delay="2s"] {animation-delay: 2s;}
+[data-delay="3s"] {animation-delay: 3s;}
+[data-delay="4s"] {animation-delay: 4s;}
+[data-delay="5s"] {animation-delay: 5s;}
+[data-delay="6s"] {animation-delay: 6s;}
+[data-delay="7s"] {animation-delay: 7s;}
+[data-delay="8s"] {animation-delay: 8s;}
+[data-delay="9s"] {animation-delay: 9s;}
+[data-delay="10s"] {animation-delay: 10s;}
+
+
+/**************************
+	Slider Captions
+**************************/
+.tp-caption{
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+    height: 100%;
+    padding: 15px;
+    color: #fff;
+    margin: 0 auto;
+}
+/*caption horizantal align*/
+[data-justify-content="flex-start"]{
+	-webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+[data-justify-content="flex-end"]{
+	-webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+[data-justify-content="center"]{
+	-webkit-justify-content: center;
+    justify-content: center;
+}
+.tp-caption[data-justify-content="space-between"]{
+	-webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+[data-justify-content="space-around"]{
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+/*caption vertical align*/
+[data-align-items="stretch"]{
+	-webkit-align-items: stretch;
+	align-items: stretch;
+}
+[data-align-items="flex-start"]{
+	-webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+[data-align-items="flex-end"]{
+    -webkit-align-items: flex-end;
+    align-items: flex-end;	
+}
+[data-align-items="center"]{
+    -webkit-align-items: center;
+    align-items: center;	
+}
+[data-align-items="baseline"]{
+	-webkit-align-items: baseline;
+    align-items: baseline;
+}
+/*End Caption*/
+
+/*caption Items Vertical align*/
+.caption-item{}
+[data-align-self="flex-start"]{
+	-webkit-align-self: flex-start;
+    align-self: flex-start;
+}
+[data-align-self="flex-end"]{
+	-webkit-align-self: flex-end;
+    align-self: flex-end;
+}
+[data-align-self="center"]{
+	-webkit-align-self: center;
+    align-self: center;
+}
+[data-align-self="baseline"]{
+	-webkit-align-self: baseline;
+    align-self: baseline;
+}
+[data-align-self="stretch"]{
+	-webkit-align-self: stretch;
+    align-self: stretch;
+}
+
+/******************************
+  Caption Item Element Style
+******************************/
+.mediumBold{
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: 700;
+    color: rgb(51, 51, 51);
+    text-shadow: 0 0 0 rgba(0,0,0,.6);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.mediumCapitalItalic{
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #0095D9;
+	font-style: italic;
+	text-shadow: 0 0 0 rgba(0,0,0,.6);
+	margin-bottom: 15px;
+	text-transform: capitalize;
+}
+.smallBold {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #0095D9;
+    text-shadow: 0 0 0 rgba(0,0,0,.6);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.smallSimple{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    text-shadow: 0 0 0 rgba(0,0,0,.6);
+    margin-bottom: 28px;
+}
+
+/*caption item Button element style*/
+a.btnSmallBg {
+    background: #0095D9;
+    font-size: 14px;
+    padding: 10px 20px;
+    line-height: 24px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all 350ms ease 0s;
+    -moz-transition: all 350ms ease 0s;
+    -o-transition: all 350ms ease 0s;
+    transition: all 350ms ease 0s;
+}
+a.btnSmallBg:hover,
+a.btnSmallBg:focus{
+    background: #005B8E;
+    color: #fff;
+    text-transform: none;
+}
+
+/*caption item List element style*/
+ul.ListCheckCircle{
+	padding: 0;
+	margin: 0 0 23px 0;
+	list-style-type: none;
+	display: inline-block;
+	text-align: left;
+}
+ul.ListCheckCircle li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    line-height: 30px;
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+ul.ListCheckCircle li::before {
+    content: "\f058";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 18px;
+    color: #0095D9;
+}
+
+
+/***********************
+	Slide Control
+***********************/
+/* Round */
+.slide-control.round.right,
+.slide-control.round.left {
+	font: normal normal normal 14px/1 FontAwesome;
+	background: rgba(0, 0, 0, 0.6);
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    color: rgba(255,255,255,0.7);
+    font-size: 24px;
+    opacity: 0;
+    z-index: 2;
+    -webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	-moz-transition: all 400ms ease 0s;
+	-o-transition: all 400ms ease 0s;
+	-ms-transition: all 400ms ease 0s;
+	-webkit-transition: all 400ms ease 0s;
+	transition: all 400ms ease 0s;
+}
+.slide-control.round.left{
+	left: -40px;
+}
+.slide-control.round.right{
+	right: -40px;
+}
+.slide-control.round.left::before{
+	content: "\f104";
+	position: relative;
+	left: -2px;
+	top: -1px;
+}
+.slide-control.round.right::before{
+	content: "\f105";
+	position: relative;
+	right: -2px;
+	top: -1px;
+}
+.tp-sliderSection:hover .slide-control.round.left{
+	left: 20px;
+	opacity: 1;
+}
+.tp-sliderSection:hover .slide-control.round.right{
+	right: 20px;
+	opacity: 1;
+}
+.slide-control.round.left:hover,
+.slide-control.round.right:hover{
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.8);
+}
+.slide-control.round.left:focus,
+.slide-control.round.right:focus{
+	text-decoration: none;
+	outline: 0;
+}
+
+/***************************
+	Carousel Indicators
+***************************/
+/* Round Gray White Black*/
+.carousel-indicators.round {
+	bottom: 12px;
+	display: none;
+}
+.tp-sliderSection:hover .carousel-indicators.round{
+	display: block;
+}
+.carousel-indicators.round li {
+    width: 16px;
+    height: 16px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);
+    -webkit-transition: all 350ms ease 0s;
+    -moz-transition: all 350ms ease 0s;
+    -o-transition: all 350ms ease 0s;
+    transition: all 350ms ease 0s;
+}
+.carousel-indicators.round li:hover,
+.carousel-indicators.round .active {
+	width: 16px;
+    height: 16px;
+    margin: 1px;
+    border: 5px solid rgba(0,0,0,1);
+    background: #fff;
+}
+
+
+/***************************
+	Progress Bar
+***************************/
+.tp-ProgressBar {
+    height: 5px;
+    background:rgba(0,0,0,0.2);
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
